@@ -22,9 +22,62 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnClickMe = New System.Windows.Forms.Button()
+        Me.txtOutput1 = New System.Windows.Forms.TextBox()
+        Me.txtOutput2 = New System.Windows.Forms.TextBox()
+        Me.btnTest2 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnClickMe
+        '
+        Me.btnClickMe.Location = New System.Drawing.Point(86, 37)
+        Me.btnClickMe.Name = "btnClickMe"
+        Me.btnClickMe.Size = New System.Drawing.Size(75, 23)
+        Me.btnClickMe.TabIndex = 0
+        Me.btnClickMe.Text = "Test1"
+        Me.btnClickMe.UseVisualStyleBackColor = True
+        '
+        'txtOutput1
+        '
+        Me.txtOutput1.Location = New System.Drawing.Point(86, 111)
+        Me.txtOutput1.Name = "txtOutput1"
+        Me.txtOutput1.Size = New System.Drawing.Size(173, 20)
+        Me.txtOutput1.TabIndex = 1
+        '
+        'txtOutput2
+        '
+        Me.txtOutput2.Location = New System.Drawing.Point(86, 137)
+        Me.txtOutput2.Name = "txtOutput2"
+        Me.txtOutput2.Size = New System.Drawing.Size(173, 20)
+        Me.txtOutput2.TabIndex = 2
+        '
+        'btnTest2
+        '
+        Me.btnTest2.Location = New System.Drawing.Point(184, 37)
+        Me.btnTest2.Name = "btnTest2"
+        Me.btnTest2.Size = New System.Drawing.Size(75, 23)
+        Me.btnTest2.TabIndex = 3
+        Me.btnTest2.Text = "Test2"
+        Me.btnTest2.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(704, 261)
+        Me.Controls.Add(Me.btnTest2)
+        Me.Controls.Add(Me.txtOutput2)
+        Me.Controls.Add(Me.txtOutput1)
+        Me.Controls.Add(Me.btnClickMe)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents btnClickMe As Button
+    Friend WithEvents txtOutput1 As TextBox
+    Friend WithEvents txtOutput2 As TextBox
+    Friend WithEvents btnTest2 As Button
 End Class
