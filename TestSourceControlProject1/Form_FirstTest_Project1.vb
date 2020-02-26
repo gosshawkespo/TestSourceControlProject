@@ -11,4 +11,8 @@
     Private Sub btnTest3_Click(sender As Object, e As EventArgs) Handles btnTest3.Click
         txtOutput3.Text = "1st Project - Test3"
     End Sub
+
+    Private Sub btnTest4_Click(sender As Object, e As EventArgs) Handles btnTest4.Click
+        txtOutput4.Text = "1st Project - Test4 at 15:00"
+    End Sub
 End Class

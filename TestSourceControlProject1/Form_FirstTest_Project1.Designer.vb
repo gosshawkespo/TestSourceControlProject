@@ -28,6 +28,8 @@ Partial Class frmFirstTest
         Me.btnTest2 = New System.Windows.Forms.Button()
         Me.btnTest3 = New System.Windows.Forms.Button()
         Me.txtOutput3 = New System.Windows.Forms.TextBox()
+        Me.btnTest4 = New System.Windows.Forms.Button()
+        Me.txtOutput4 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnClickMe
@@ -78,11 +80,29 @@ Partial Class frmFirstTest
         Me.txtOutput3.Size = New System.Drawing.Size(173, 20)
         Me.txtOutput3.TabIndex = 5
         '
+        'btnTest4
+        '
+        Me.btnTest4.Location = New System.Drawing.Point(401, 37)
+        Me.btnTest4.Name = "btnTest4"
+        Me.btnTest4.Size = New System.Drawing.Size(75, 23)
+        Me.btnTest4.TabIndex = 6
+        Me.btnTest4.Text = "Test4"
+        Me.btnTest4.UseVisualStyleBackColor = True
+        '
+        'txtOutput4
+        '
+        Me.txtOutput4.Location = New System.Drawing.Point(86, 191)
+        Me.txtOutput4.Name = "txtOutput4"
+        Me.txtOutput4.Size = New System.Drawing.Size(173, 20)
+        Me.txtOutput4.TabIndex = 7
+        '
         'frmFirstTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 261)
+        Me.Controls.Add(Me.txtOutput4)
+        Me.Controls.Add(Me.btnTest4)
         Me.Controls.Add(Me.txtOutput3)
         Me.Controls.Add(Me.btnTest3)
         Me.Controls.Add(Me.btnTest2)
@@ -102,4 +122,6 @@ Partial Class frmFirstTest
     Friend WithEvents btnTest2 As Button
     Friend WithEvents btnTest3 As Button
     Friend WithEvents txtOutput3 As TextBox
+    Friend WithEvents btnTest4 As Button
+    Friend WithEvents txtOutput4 As TextBox
 End Class
